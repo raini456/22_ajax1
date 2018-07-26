@@ -1,0 +1,408 @@
+{
+    "g0": {
+        "data": [{
+                "pricePerPerson": {
+                    "amount": 4740,
+                    "currency": "EUR"
+                },
+                "departureDate": {
+                    "day": 28,
+                    "month": 7,
+                    "year": 2018,
+                    "formatted": "28.07.2018",
+                    "dayOfWeek": 6
+                },
+                "returnDate": {
+                    "day": 11,
+                    "month": 8,
+                    "year": 2018,
+                    "formatted": "11.08.2018",
+                    "dayOfWeek": 6
+                },
+                "stayStartDate": {
+                    "day": 28,
+                    "month": 7,
+                    "year": 2018,
+                    "formatted": "28.07.2018",
+                    "dayOfWeek": 6
+                },
+                "stayEndDate": {
+                    "day": 11,
+                    "month": 8,
+                    "year": 2018,
+                    "formatted": "11.08.2018",
+                    "dayOfWeek": 6
+                },
+                "nights": 14,
+                "room": {
+                    "type": "GT04-RO",
+                    "subType": "ST04-SU",
+                    "additionalType": null,
+                    "name": "SUITE",
+                    "description": "Red Level Junior Suite",
+                    "maxOccupancy": null
+                },
+                "mealType": "GT06-BR",
+                "infoUrl": "http://cp.traveltainment.de/content_page_premium/index.php?KID=689000&IFF=515&Reiseart=AT01&PG_Art=&Zimmercode=JSX1+G&RequestArt=termine&START=1&VA=ATID&startva=ATID&lang=&CRS_CODE=PMI11350&engine=pauschal&timestamp=1532736000",
+                "providerRawData": {
+                    "hotelCode": "PMI11350",
+                    "bookingCode": "JSX1",
+                    "roomCode": null,
+                    "mealCode": null,
+                    "tourOperatorCode": "ATID",
+                    "tourOperatorTravelType": "AT01",
+                    "legalPackageArrangement": true
+                },
+                "attributes": ["6eff2a65-128c-4d73-9a1e-8529bd784f10"],
+                "duration": 14,
+                "tourOperator": {
+                    "id": "1ce6e363-bdb6-3ea9-9c3b-10ac2a6fb087",
+                    "name": "Airtours"
+                },
+                "payments": [{
+                        "type": "GT18-CC",
+                        "subType": "ST18-VI"
+                    }, {
+                        "type": "GT18-CC",
+                        "subType": "ST18-MC"
+                    }, {
+                        "type": "GT18-CC",
+                        "subType": "ST18-DC"
+                    }, {
+                        "type": "GT18-CC",
+                        "subType": "ST18-AE"
+                    }],
+                "totalPrice": {
+                    "amount": 9480,
+                    "currency": "EUR"
+                },
+                "travellerPriceList": [{
+                        "age": 25,
+                        "personType": "ADT",
+                        "price": {
+                            "amount": 4740,
+                            "currency": "EUR"
+                        }
+                    }, {
+                        "age": 25,
+                        "personType": "ADT",
+                        "price": {
+                            "amount": 4740,
+                            "currency": "EUR"
+                        }
+                    }],
+                "bookingCautions": "Preis-/Buchungsanfrage (TOP-Angebot, bitte AGB beachten), Sie sparen 1166.00 EUR (10.0%)Zwangsinformationen vorhanden280718 EW 8598 Y TXL 19:10-21:40 PMI TN01,TN02110818 EW 8593 Y PMI 18:15-21:05 TXL TN01,TN02 SIE HABEN EINE PAUSCHALREISE MIT EINEM LINIENFLUG GEBUCHT - ES GELTEN GESONDERTE BEDINGUNGEN GEM. AGB ZIFFER 8 BITTE BEACHTEN :- Überprüfen Sie bitte die korrekte Eingabe der Namen aller Mitreisenden und das Geburtsdaten analog des maschinenlesbaren Teils im Pass. - bei mehreren Vornamen ist der 1. Vorname ausreichend. - Geburtsdaten sind nur für TSA Zielgebiete und bei Kindern und Infants relevant- bitte legen Sie keine fiktiven Buchungen an, (z.B. Test/ T/ Mouse/ Mickey ) Müssen nachträglich Namensänderungen vorgenommen werden, entstehen Ihnen Mehrkosten.Bitte beachten Sie, dass Buchungen mit mehr als 9 Personen nicht gestattet sind.",
+                "availability": {
+                    "checkNeeded": false,
+                    "status": "AVAILABLE",
+                    "attributes": []
+                },
+                "flight": {
+                    "departureAirport": "TXL",
+                    "departureAirportName": "Berlin Tegel",
+                    "destinationAirport": "PMI",
+                    "destinationAirportName": "Palma de Mallorca"
+                },
+                "flightInfo": {
+                    "inbound": [{
+                            "departureAirport": {
+                                "code": "PMI",
+                                "name": "Palma de Mallorca"
+                            },
+                            "departure": {
+                                "date": "11.08.2018",
+                                "time": "18:15",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-08-11T18:15:00.000+02:00"
+                            },
+                            "arrivalAirport": {
+                                "code": "TXL",
+                                "name": "Berlin Tegel"
+                            },
+                            "arrival": {
+                                "date": "11.08.2018",
+                                "time": "21:05",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-08-11T21:05:00.000+02:00"
+                            },
+                            "flightDuration": {
+                                "hours": 2,
+                                "minutes": 50
+                            },
+                            "carrier": {
+                                "code": "EW",
+                                "name": "Eurowings"
+                            },
+                            "flightNumber": "8593"
+                        }],
+                    "inboundDuration": {
+                        "hours": 2,
+                        "minutes": 50
+                    },
+                    "inboundLayover": [],
+                    "inboundStops": 0,
+                    "outbound": [{
+                            "departureAirport": {
+                                "code": "TXL",
+                                "name": "Berlin Tegel"
+                            },
+                            "departure": {
+                                "date": "28.07.2018",
+                                "time": "19:10",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-07-28T19:10:00.000+02:00"
+                            },
+                            "arrivalAirport": {
+                                "code": "PMI",
+                                "name": "Palma de Mallorca"
+                            },
+                            "arrival": {
+                                "date": "28.07.2018",
+                                "time": "21:40",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-07-28T21:40:00.000+02:00"
+                            },
+                            "flightDuration": {
+                                "hours": 2,
+                                "minutes": 30
+                            },
+                            "carrier": {
+                                "code": "EW",
+                                "name": "Eurowings"
+                            },
+                            "flightNumber": "8598"
+                        }],
+                    "outboundDuration": {
+                        "hours": 2,
+                        "minutes": 30
+                    },
+                    "outboundLayover": [],
+                    "outboundStops": 0
+                },
+                "providerId": "d6bf8872-5e6b-4d74-ba55-ef227cf34915",
+                "offerId": "16c12026-5fe7-42ac-bf15-c45789a0fa14",
+                "priceCorrections": null,
+                "adults": 2,
+                "children": [],
+                "hotelId": "ad8df3a1-169f-3bc6-ba2d-5bf87ee26571",
+                "maxNumberOfRooms": null,
+                "numberOfRooms": 1,
+                "customProviderData": null,
+                "cancellationInformation": {
+                    "cancellationStatus": null,
+                    "customProviderData": null
+                },
+                "clickOutUrl": null,
+                "rankScoring": null,
+                "offerQuality": null,
+                "multipleRoomPrice": null,
+                "transfer": "GT14-TR",
+                "marketingInformation": null,
+                "exclusiveOffer": false,
+                "directFlight": true,
+                "type": "package"
+            }, {
+                "pricePerPerson": {
+                    "amount": 5328,
+                    "currency": "EUR"
+                },
+                "departureDate": {
+                    "day": 28,
+                    "month": 7,
+                    "year": 2018,
+                    "formatted": "28.07.2018",
+                    "dayOfWeek": 6
+                },
+                "returnDate": {
+                    "day": 11,
+                    "month": 8,
+                    "year": 2018,
+                    "formatted": "11.08.2018",
+                    "dayOfWeek": 6
+                },
+                "stayStartDate": {
+                    "day": 28,
+                    "month": 7,
+                    "year": 2018,
+                    "formatted": "28.07.2018",
+                    "dayOfWeek": 6
+                },
+                "stayEndDate": {
+                    "day": 11,
+                    "month": 8,
+                    "year": 2018,
+                    "formatted": "11.08.2018",
+                    "dayOfWeek": 6
+                },
+                "nights": 14,
+                "room": {
+                    "type": "GT04-RO",
+                    "subType": "ST04-SU",
+                    "additionalType": null,
+                    "name": "SUITE",
+                    "description": "Red Level Junior Suite",
+                    "maxOccupancy": null
+                },
+                "mealType": "GT06-HB",
+                "infoUrl": "http://cp.traveltainment.de/content_page_premium/index.php?KID=689000&IFF=515&Reiseart=AT01&PG_Art=&Zimmercode=JSX1+H&RequestArt=termine&START=1&VA=ATID&startva=ATID&lang=&CRS_CODE=PMI11350&engine=pauschal&timestamp=1532736000",
+                "providerRawData": {
+                    "hotelCode": "PMI11350",
+                    "bookingCode": "JSX1",
+                    "roomCode": null,
+                    "mealCode": null,
+                    "tourOperatorCode": "ATID",
+                    "tourOperatorTravelType": "AT01",
+                    "legalPackageArrangement": true
+                },
+                "attributes": ["6eff2a65-128c-4d73-9a1e-8529bd784f10"],
+                "duration": 14,
+                "tourOperator": {
+                    "id": "1ce6e363-bdb6-3ea9-9c3b-10ac2a6fb087",
+                    "name": "Airtours"
+                },
+                "payments": [{
+                        "type": "GT18-CC",
+                        "subType": "ST18-AE"
+                    }, {
+                        "type": "GT18-CC",
+                        "subType": "ST18-DC"
+                    }, {
+                        "type": "GT18-CC",
+                        "subType": "ST18-VI"
+                    }, {
+                        "type": "GT18-CC",
+                        "subType": "ST18-MC"
+                    }],
+                "totalPrice": {
+                    "amount": 10656,
+                    "currency": "EUR"
+                },
+                "travellerPriceList": [{
+                        "age": 25,
+                        "personType": "ADT",
+                        "price": {
+                            "amount": 5328,
+                            "currency": "EUR"
+                        }
+                    }, {
+                        "age": 25,
+                        "personType": "ADT",
+                        "price": {
+                            "amount": 5328,
+                            "currency": "EUR"
+                        }
+                    }],
+                "bookingCautions": "Preis-/Buchungsanfrage (TOP-Angebot, bitte AGB beachten), Sie sparen 1166.00 EUR (9.0%)Zwangsinformationen vorhanden280718 EW 8598 Y TXL 19:10-21:40 PMI TN01,TN02110818 EW 8593 Y PMI 18:15-21:05 TXL TN01,TN02 SIE HABEN EINE PAUSCHALREISE MIT EINEM LINIENFLUG GEBUCHT - ES GELTEN GESONDERTE BEDINGUNGEN GEM. AGB ZIFFER 8 BITTE BEACHTEN :- Überprüfen Sie bitte die korrekte Eingabe der Namen aller Mitreisenden und das Geburtsdaten analog des maschinenlesbaren Teils im Pass. - bei mehreren Vornamen ist der 1. Vorname ausreichend. - Geburtsdaten sind nur für TSA Zielgebiete und bei Kindern und Infants relevant- bitte legen Sie keine fiktiven Buchungen an, (z.B. Test/ T/ Mouse/ Mickey ) Müssen nachträglich Namensänderungen vorgenommen werden, entstehen Ihnen Mehrkosten.Bitte beachten Sie, dass Buchungen mit mehr als 9 Personen nicht gestattet sind.",
+                "availability": {
+                    "checkNeeded": false,
+                    "status": "AVAILABLE",
+                    "attributes": []
+                },
+                "flight": {
+                    "departureAirport": "TXL",
+                    "departureAirportName": "Berlin Tegel",
+                    "destinationAirport": "PMI",
+                    "destinationAirportName": "Palma de Mallorca"
+                },
+                "flightInfo": {
+                    "inbound": [{
+                            "departureAirport": {
+                                "code": "PMI",
+                                "name": "Palma de Mallorca"
+                            },
+                            "departure": {
+                                "date": "11.08.2018",
+                                "time": "18:15",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-08-11T18:15:00.000+02:00"
+                            },
+                            "arrivalAirport": {
+                                "code": "TXL",
+                                "name": "Berlin Tegel"
+                            },
+                            "arrival": {
+                                "date": "11.08.2018",
+                                "time": "21:05",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-08-11T21:05:00.000+02:00"
+                            },
+                            "flightDuration": {
+                                "hours": 2,
+                                "minutes": 50
+                            },
+                            "carrier": {
+                                "code": "EW",
+                                "name": "Eurowings"
+                            },
+                            "flightNumber": "8593"
+                        }],
+                    "inboundDuration": {
+                        "hours": 2,
+                        "minutes": 50
+                    },
+                    "inboundLayover": [],
+                    "inboundStops": 0,
+                    "outbound": [{
+                            "departureAirport": {
+                                "code": "TXL",
+                                "name": "Berlin Tegel"
+                            },
+                            "departure": {
+                                "date": "28.07.2018",
+                                "time": "19:10",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-07-28T19:10:00.000+02:00"
+                            },
+                            "arrivalAirport": {
+                                "code": "PMI",
+                                "name": "Palma de Mallorca"
+                            },
+                            "arrival": {
+                                "date": "28.07.2018",
+                                "time": "21:40",
+                                "dayOfWeek": 6,
+                                "dateTimeIso": "2018-07-28T21:40:00.000+02:00"
+                            },
+                            "flightDuration": {
+                                "hours": 2,
+                                "minutes": 30
+                            },
+                            "carrier": {
+                                "code": "EW",
+                                "name": "Eurowings"
+                            },
+                            "flightNumber": "8598"
+                        }],
+                    "outboundDuration": {
+                        "hours": 2,
+                        "minutes": 30
+                    },
+                    "outboundLayover": [],
+                    "outboundStops": 0
+                },
+                "providerId": "d6bf8872-5e6b-4d74-ba55-ef227cf34915",
+                "offerId": "16eaa243-9877-4338-9bb9-73a82e0753e5",
+                "priceCorrections": null,
+                "adults": 2,
+                "children": [],
+                "hotelId": "ad8df3a1-169f-3bc6-ba2d-5bf87ee26571",
+                "maxNumberOfRooms": null,
+                "numberOfRooms": 1,
+                "customProviderData": null,
+                "cancellationInformation": {
+                    "cancellationStatus": null,
+                    "customProviderData": null
+                },
+                "clickOutUrl": null,
+                "rankScoring": null,
+                "offerQuality": null,
+                "multipleRoomPrice": null,
+                "transfer": "GT14-TR",
+                "marketingInformation": null,
+                "exclusiveOffer": false,
+                "directFlight": true,
+                "type": "package"
+            }],
+        "meta": {}
+    }
+}
