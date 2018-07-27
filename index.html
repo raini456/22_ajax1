@@ -43,13 +43,33 @@
             <h6>Ausgabe / Response vom Server</h6>
             <div id="output">......</div>
             <hr>
-            <button data-x="10" id="btn" class="btn btn-outline-dark">AJAX CALL</button>
-            <button id="btnCSV" class="btn btn-outline-dark">CSV DATEN einlesen</button>
-            <button id="btnJSON" class="btn btn-outline-dark">JSON DATEN einlesen</button>
-            <button id="btnHoliday" class="btn btn-outline-dark">Holidaycheck JSON DATEN einlesen</button>
-            <button id="btnLoading" class="btn btn-outline-dark">Ajax Loading</button>
-            <button id="btnHotels" class="btn btn-outline-dark">getHotels</button>
-
+            <button data-x="10" id="btn" class="btn btn-sm btn-outline-dark">AJAX CALL</button>
+            <button id="btnCSV" class="btn btn-sm btn-outline-dark">CSV DATEN einlesen</button>
+            <button id="btnJSON" class="btn btn-sm btn-outline-dark">JSON DATEN einlesen</button>
+            <button id="btnHoliday" class="btn btn-sm btn-outline-dark">Holidaycheck JSON DATEN einlesen</button>
+            <button id="btnLoading" class="btn btn-sm btn-outline-dark">Ajax Loading</button>
+            <button id="btnHotels" class="btn btn-sm btn-outline-dark">getHotels</button>            
+        </div>
+        <div class="container">
+            <form id="formInsert" autocomplete="off">
+            <div class="row">
+                <div class="col-3">
+                    <label for="nameHotel">Hotelname
+                        <input type="text" id="nameHotel" name="nameHotel" class="input-group pl-1">
+                    </label>
+                </div>
+                <div class="col-1">
+                    <label for="starsHotel">Sterne
+                        <input type ="number" min="1" max="5" value="0" id="starsHotel" name="starsHotel" class="input-group pl-1">
+                    </label>
+                </div> 
+                
+                <div class="col-2">
+                <button class="btn btn-outline-primary pl-1 mt-4" name="btnInsert">Hotel eintragen</button>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            </form>
         </div>
         <div id="tableHotels"></div>
         <!--table class="table-info" id="tableHotels">

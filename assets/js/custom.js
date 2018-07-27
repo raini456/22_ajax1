@@ -8,7 +8,9 @@
     var btnLoading = document.querySelector('#btnLoading');
     var btnHotels = document.querySelector('#btnHotels');
     var tableHotels = document.querySelector('#tableHotels');
-    
+    var formInsert = document.querySelector('#formInsert');
+
+
     var ajax = function (url, params, callback) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
@@ -39,7 +41,7 @@
         var str = 'Hotel: ' + csv[0] + ' (' + csv[1] + ' Sterne)';
         output.innerText = str;
     };
-    
+
 
     btnCSV.addEventListener('click', function () {
         ajax('datadb.php', null, viewHotel);
@@ -102,49 +104,49 @@
 //      tableHotels1.innerHTML=html;
 //      return html;
 //    }
-        
-    var viewHotels = function (jsonstr) {        
+
+    var viewHotels = function (jsonstr) {
         var table, thead, tbody, th, tr, td, txt;
-        var hotels= JSON.parse(jsonstr);
+        var hotels = JSON.parse(jsonstr);
         table = document.createElement('table');
         thead = document.createElement('thead');
         tbody = document.createElement('tbody');
-        
-        table.appendChild(thead);       
-        table.className= 'table';
-        
+
+        table.appendChild(thead);
+        table.className = 'table';
+
         tr = document.createElement('tr');
         thead.appendChild(tr);
-        
+
         th = document.createElement('th');
-        txt=document.createTextNode('Hotel');
+        txt = document.createTextNode('Hotel');
         th.appendChild(txt);
         tr.appendChild(th);
-                
+
         th = document.createElement('th');
-        txt=document.createTextNode('Sterne');
+        txt = document.createTextNode('Sterne');
         th.appendChild(txt);
         tr.appendChild(th);
-        
+
         for (var i = 0, max = hotels.length; i < max; i++) {
             tr = document.createElement('tr');
-            for (var key in hotels[i]){
+            for (var key in hotels[i]) {
                 td = document.createElement('td');
-            txt = document.createTextNode(hotels[i][key]);
-            td.appendChild(txt);
-            tr.appendChild(td);
-         }                  
-        tbody.appendChild(tr);        
-    }
-    table.appendChild(thead);
-    table.appendChild(tbody);
-    tableHotels.appendChild(table);
-    ajaxLoad(false);
+                txt = document.createTextNode(hotels[i][key]);
+                td.appendChild(txt);
+                tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+        }
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        tableHotels.appendChild(table);
+        ajaxLoad(false);
         //output.innerHTML = hotels(travel.g0.data);
     };
 
 
-   btnHoliday.addEventListener('click', function () {
+    btnHoliday.addEventListener('click', function () {
         ajax('holidaycheck.json', null, viewHolidaycheckTravel);
     });
 
@@ -152,7 +154,7 @@
 //        ajaxLoad(true);
 //        ajax('getHotels.php', null, viewHotels);
 //    });
-   btnHotels.addEventListener('click', function(){        
+    btnHotels.addEventListener('click', function () {
         ajaxLoad(true);
         ajax('getHotels.php', null, viewHotels);
     });
@@ -183,8 +185,12 @@
         ajaxLoad(true);
         ajax('loading.php', null, viewAfterLoading);
     });
-
-
-
-
+    formInsert.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var name = this.elements['nameHotel'];
+        var stars = this.elements['starsHotel'];
+        console.log(name, stars);
+        var params = 'name=' + name.value + '&stars=' + stars.value;
+        ajax('insertHotel.php', params, function(){});
+    });
 })();
