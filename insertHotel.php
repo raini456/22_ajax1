@@ -1,23 +1,20 @@
 <?php
 
 require_once './config.php';
-$data = filter_input(INPUT_GET, 'params', 513);
-$explodedData= explode('&', $data);
-echo $explodedData;
-foreach($explodedData as $key=>$value){
-    $key=$value;
-}
-
-
-
-$dbHost = sprintf('mysql:host=%s;dbname=%s;charset=%s',
-        HOST, DB, CHAR);
+$dbHost = sprintf('mysql:host=%s;dbname=%s;charset=%s', HOST, DB, CHAR);
 $db = new PDO($dbHost, USER, PASS);
 
-//$sql = "SELECT name, stars FROM tb_hotels";
-$sql = sprint('INSERT INTO %s(%s,%s) VALUES(%s,%s)', 'tb_hotels', 'name', 'stars', $name, $stars);
-//$sql = "INSERT INTO ";
-$statement = $db->query($sql);
-//$rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+$hotelName = filter_input(INPUT_POST, 'name', 513, FILTER_FLAG_NO_ENCODE_QUOTES);
+$hotelStars = filter_input(INPUT_POST, 'stars', FILTER_VALIDATE_INT);
+if (is_string($hotelName) && is_int($hotelStars)) {
+    $stmt = $db->prepare('INSERT INTO tb_hotels(name, stars) VALUES (:n, :s)');
+// bindParam kann man in einer Schleife mit ->execute verwenden, mit bindValue ist das nicht möglich
+// es kann nur einmal verwandt werden!!
+//    $stmt->bindParam(':n', $hotelName, PDO::PARAM_STR);
+//    $stmt->bindParam(':s', $hotelStars, PDO::PARAM_INT);
+    $stmt->bindValue(':n', $hotelName, PDO::PARAM_STR);
+    $stmt->bindValue(':s', $hotelStars, PDO::PARAM_INT);
+    
+    $stmt->execute();
+}
 
-echo json_encode($rows);

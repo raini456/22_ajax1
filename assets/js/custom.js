@@ -14,7 +14,7 @@
     var ajax = function (url, params, callback) {
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function () {
-            if (this.readyState === 4) {
+            if (this.readyState === 4 && this.readyState===200) {
                 //ajaxLoad(false);
                 callback(this.responseText);
             }
@@ -23,6 +23,17 @@
         xhr.open('get', url + params, true);
         //ajaxLoad(true);
         xhr.send(null);
+    };
+    var ajaxPost = function (url, params, callback) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState === 4 && xhr.status === 200) {
+                callback(this.responseText);
+            }
+        };
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.open('post', url, true);
+        xhr.send(params);
     };
 
     var viewResponse = function (response) {
@@ -191,6 +202,6 @@
         var stars = this.elements['starsHotel'];
         console.log(name, stars);
         var params = 'name=' + name.value + '&stars=' + stars.value;
-        ajax('insertHotel.php', params, function(){});
+        ajaxPost('insertHotel.php', params, function(){});
     });
 })();
